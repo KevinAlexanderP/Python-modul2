@@ -30,3 +30,25 @@ def calculate_age(current_year, birth_year):
 
 my_age= calculate_age(2049, 1993)
 dads_age= calculate_age(2049,1053)
+
+
+## multiple return values 
+
+def square_points(x_value,y_value):
+    x_2=x_value * x_value
+    y_2= y_value * y_value
+    return x_2, y_2
+
+x_squared, y_squared = square_point(1, 3)
+print(x_squared)
+print(y_squared)
+
+## output 1,9
+
+## SCOPE 
+def create_special_string(special_item):
+    return "Our special is " + special_item + "."
+
+## IF WE TRY TO ACCES TO LOCAL SCOPE, WILL GET NAME ERROR
+## THE GLOBAL SCOPE IS
+
